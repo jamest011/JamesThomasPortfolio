@@ -1,0 +1,104 @@
+*{
+    margin: auto;
+    max-width: 750px;
+}
+html{
+    background-color: grey;
+}
+
+h1{
+    text-align: center;
+    margin: 50px;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+}
+h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.demographics {
+    grid-row: 2/3;
+}
+
+li {
+    text-align: left;
+}
+
+hr {
+    background-color: #000;
+    color: #000;
+    height: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.demographics p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-indent: 30px;
+    padding: 30px;
+}
+
+.tgallery-paragraph {
+    color: #fff;
+}
+
+.visit-distance {
+    text-align: center;
+    border: 2px solid white;
+    padding-bottom: 20px;
+    /* margin: 20px 0 10px 40px; */
+}
+
+/* accordion */
+ .demographics .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.demographics label {
+    display: block;
+    padding: 20px 22px;
+    font-size: 1.25rem;
+    margin: 0 0 1px 0;
+    cursor: pointer;
+    background: #000;
+    border-radius: 3px;
+    color: #fff;
+    transition: ease 0.5s;
+    text-align: center;
+}
+  
+/* label hover color change */
+.demographics label:hover {
+    background: white;
+    color:#000;
+}
+.demographics .content {
+    background: #c89f70;
+    padding: 10px 25px;
+    border: 1px solid #a7a7a7;
+    margin: 0 0 1px 0;
+    border-radius: 3px;
+    text-align: center;
+    color: #000;
+}
+  
+.demographics input + label + .content {
+    display: none;
+}
+  
+.demographics input:checked + label + .content {
+    display: block;
+}
+  
+.demographics input[type="checkbox"]  {
+    display: none;
+}
