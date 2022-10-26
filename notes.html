@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Notes</title>
+    <link rel="stylesheet" href="assets/css/notes.css" />
+</head>
+<body>
+    <h1>Weekly Notes</h1>
+    <div class="demographics">
+        <input type="checkbox" id="question1">
+        <label for="question1">Week 1</label>
+
+        <div class="content">
+            <ul>
+                <h2>Syllabus</h2>
+                <li> install important programs and get access to SitePoint ✅</li>
+                <li> heavily team/group centered</li>
+                <li> request reviews **when needed**</li>
+                <li> NO LATE WORK</li>
+ 
+                <h2>Working in groups</h2>
+                <li> communicate with team</li>
+                <li> Github is a great way to cya and show what you have personally contributed</li>
+                <li> track tasks in Trello</li>
+ 
+                <h2>Git and Github</h2>
+                <li> When you make a save you overwrite the previous version unless you save it under a new name</li>
+                <li> Version control - a way of recording changes to a file(s); 2 types - centralized and distributed</li>
+                <li> Work on branches and make sure the head is current to stay together</li>
+            <hr>
+                <h2>Master Mobile UX</h2>
+                <li>Whatever you are doing, do mobile first - Eric Schmidt</li>
+                <li>Boarding pass example: 5 to delete or 0 for automatically delete</li>
+                <li>Key items in easy to reach places</li>
+                <li>SVG and Webp</li>
+                <li>Minimize CSS and JS</li>
+                <li>Gzip files ???</li>
+                <li>****** Float labels - I want to learn more about this******</li>
+                <h2>JavaScript: Novice to Ninja</h2>
+                <li>Constructor function</li>
+                <li>this - represents the object that will be returned. Be careful because 'this' is not retained inside nested functions which can cause issues work around is using
+                    that = this with bind(this).</li>
+                <li>Prototypal inheritance</li>
+                <li>any properties or methods of a classes prototype can be accessed by every object instantiated by that class
+                    use getPrototypeOf()
+                    prototype should be used when the properties will stay the same for every instances of the class</li>
+                <li>***A golden rule to remember is: Never use arrays or objects as a default value in prototype***</li>
+                <li>spend some time looking into JQuery and Lodash</li>
+                <li>export and import ex: import {PI} from './pi.js';</li>
+                <li>Having more than one default export will result in a syntax error.</li>
+                <li>template to save time</li>
+                <li>npm - node package manager</li>
+                <li>Object Methods, 'this'</li>
+                <li>short hand is preferred 'sayHi() {' instead of 'sayHi: function() {'</li>
+            </ul>
+        </div>
+        <input type="checkbox" id="question2">
+        <label for="question2">Week 2</label>
+          <div class="content">
+            <ul>
+                <h2>JavaScript: Novice to Ninja</h2>
+                <li>Global variables 'var' and 'windows.var' are the exact same. No need for windows.</li>
+                <li>Typically refer without 'windows.'</li>
+                <li>windows.alert() - pauses execution of program and display dialog box</li>
+                <li>windows.confirm() - '    ' and displays confirmation dialog box good for deletion confirmation</li>
+                <li>windows.promt() - ' ' and displays dialog box with input field</li>
+                <li>Don't rely on this as most browsers have an option to disable this feature</li>
+                <li>windows.navigator.userAgent returns browser/os details</li>
+                <li>windows.location for URL info</li>
+                <li>Stop using document.write()</li>
+                <li>windows.setTimeout - enter in milliseconds </li>
+                <li>windows.clearTimeout - cancels ^</li>
+                <li>setInterval() - like timeout but repeats after the given time-frame in ms</li>
+                <li>Animation can be done and is typically better done in CSS than JS, do not exclude JS though.</li>
+            <hr>
+                <h2>JavaScript: Novice to Ninja</h2>
+                <li>Catch bugs early and test your code.</li>
+                <li>'use strict' - produces more exceptions and warnings to make sure our code runs faster and doesn't cause problems later. Can be function specific.</li>
+                <li>Linting tools can also help test the quality of the JS code</li>
+                <li>Most browsers have a debugging tool, but debugger will create a breakpoint</li>
+                <li>RangeError - number outside of allowable range of values</li>
+                <li>ReferenceError - reference made to a non-existent item.</li>
+                <li>SyntaxError - error in the code's syntax</li>
+                <li>TypeError - error in type of value. String used instead of number</li>
+                <li>URIError - problem encoding or decoding the URL</li>
+                <li>InternalError - error in JS engine. Usually too much recursion</li>
+                <li>throw - stops execution of the program.</li>
+                <li>try - executes first and if exception then move to catch</li>
+                <li>catch - catches exception from try</li>
+                <li>finally - consists of those above</li>
+                <h2>Single-Page Apps</h2>
+                <li>What? Website that loads a single web page then loads it with JS. </li>
+                <li>Provides better loads and a more dynamic experience for the user, but you have tradeoffs.</li>
+                <li>More effort to maintain, monitor the performance and limit SEO. </li>
+                <li>Route matching compares the current location against the routes to find matches.</li>
+                <li>history.pushState() - adds an entry to the history after the current one can update the URL without triggering a page reload</li>
+                <li>history.replaceState() - replaces current entry.</li>
+                <li>go() - same as forward button on browser. Ex: go(-1) = go back one, go(1) = go forward one,  go() = reload</li>
+                <li>using history.go() and clicking forward/back buttons to navigate will cause full page reloads.</li>
+                <li>More Info - https://developer.mozilla.org/en-US/docs/Web/API/History_API</li>
+                <li>At times 'You end up recreating with JavaScript a lot of the features the browser gives you out-of-the-box.'</li>
+                <li>Doing this means that you have more code to maintain and can make the code more bug-prone.</li>
+                <li>handle routing - https://krasimirtsonev.com/blog/article/A-modern-JavaScript-router-in-100-lines-history-api-pushState-hash-url</li>
+                <li>A simpler approach is to let the browser load the real HTML files located at the URLs.</li>
+                <img src="images/ex1.png" alt="code example" />
+                <li>Why is this better than JS routing?</li>
+                <li>Supports built in browser functions for forward and backwards. </li>
+                <li>No need to intercept clicks</li>
+                <li>No complex regex patterns or using another library to parse the URL. It's built in the markup</li>
+                <li>Simpler and easier to implement. </li>
+                <h2>HTML5 Template</h2>
+                <li>Defines a reusable piece of HTML that can be changed like you would the contents of the actual document.</li>
+                <li>Anything inside of template is like regular HTML except:</li>
+                <li>script tags do get run</li>
+                <li>style tags don't get evaluated</li>
+                <li>Does not load external resources such as img and embed</li>
+                <li>widely supported on browsers</li>
+            </ul>
+          </div>
+          <input type="checkbox" id="question3">
+          <label for="question3">Week 3</label>          
+          <div class="content">
+            <ul>
+                <h2>JavaScript: Novice to Ninja</h2>
+                <li>AJAX - Asynchronous JavaScript and XML. AJAX is a new technique for creating better, faster, and more interactive 
+                    web applications with the help of XML, HTML, CSS, and Java Script. Done typically through JSON</li>
+                <li>Benefits - do not need a full page reload</li>
+                <li>const headers = new Headers({ 'Content-Type': 'text/plain', 'Accept-Charset' : 'utf-8', 'Accept-Encoding':'gzip,deflate' })</li>
+                <li>has() - check if headers obj contains header as argument</li>
+                <li>append() - adds a header</li>
+                <li>set() - sets value of header that exists or creates one with value if it doesn't exist</li>
+                <li>keys(), value() and entries() - used to iterate over the headers key, values or entries</li>
+                <img src="images/ex2.png" alt="code example" />
+                <li>GET - requests to retrieve resources</li>
+                <li>POST - requests, usually used to create a resource but can actually perform any task</li>
+                <li>PUT - requests to upsert, which means insert a resource or update it entirely</li>
+                <li>PATCH - requests to make partial updates to a resource</li>
+                <li>DELETE - requests to delete a resource</li>
+                <li>The FormData interface makes it easier to send data from forms.</li>
+                <img src="images/ex3.png" alt="code example" />
+            <hr>
+                <h2>JavaScript: Novice to Ninja</h2>
+                <li>Forms are the main way for entering info into browser</li>
+                <li>HTML5 input types are being integrated into modern browsers</li>
+                <li>Document.forms - returns html info all forms on a page</li>
+                <li>Form.elements - returns html info within form</li>
+                <li>The HTML5 form validation API can be used to automatically validate a form, but only at a basic level, so a custom validation script may be required.</li>
+                <h2>Video: https://www.youtube.com/watch?v=GWJhE7Licjs</h2>
+                <li>Must have name attribute in your input or else it'll be empty</li>
+                <img src="images/ex4.png" alt="code example" />
+                <li>Fd to get the formData as the body</li>
+                <li>To be able to use the wait add async</li>
+                <li>A lot can be done with building controls in browser</li>
+                <h2>MDN: Client-Side Form Validation</h2>
+                <li>Making a field required</li>
+                <li>Having a specific format for fields</li>
+                <li>Using built in validation</li>
+                <li>Careful; of malicious users</li>
+            </ul>
+          </div>
+          <input type="checkbox" id="question4">
+          <label for="question4">Week 4</label>
+          <div class="content">
+            <ul>
+                <h2>JavaScript: Novice to Ninja</h2>
+                <li>Transform - translate, rotate, scale or skew any element on the page</li>
+                <li>translate(x,y) - moves element x from left and y from the top</li>
+                <li>just move vertically or horizontally - translateX() or translateY()</li>
+                <li>scale() - grows or shrinks element and maintains the original aspect ratio</li>
+                <li>if you scale inline-block elements text around will NOT accommodate</li>
+                <li>rotate() - rotates an element</li>
+                <li>skew() - specifies skew along (x, y) axis' respectively</li>
+                <li>using CSS transitions is smoother especially when mobile browsing</li>
+                <li>transition-property - defines the CSS properties of the element that should be transitioned</li>
+                <li>transition-duration - how long the transition will take</li>
+                <li>transition-delay - usually it starts immediately but can be delayed using this with ms or s</li>
+                <img src="images/ex5.png" alt="code example" />
+                <li>To create an animation, use the @keyframes</li>
+                <img src="images/ex6.png" alt="code example" />
+                <li>animation-timing-function - determines how the animation will progress over the time set</li>
+                <li>options are: ease, linear, ease-in, ease-out, ease-in-out, cubic-bezier(), step-start, step-end and steps(number, direction)</li>
+                <li>background images cannot be animated but background-position can</li>
+                <li>animation-fill-mode - says what happens before and after the animation iteration</li>
+                <li>options are: none, forward, backwards or both. Default is none</li>
+                <li>animation-play-state - says if animation is running or not</li>
+                <h2>Further Functions</h2>
+                <li>length - is built into functions but we can customize it</li>
+                <li>call() - can set value of this inside of a function to an object provided</li>
+                <li>apply(x,[]) - works the same as above but in an array</li>
+                <li>IIFE (“iffy”) - immediately invoked function expression</li>
+                <li>Place temp variables inside IIFE's to be called when needed and not interfere with other code</li>
+                <img src="images/ex7.png" alt="code example" />
+                <li>Use strict mode inside of an IIFE because there's no way to tell if others are using it too</li>
+                <li>Functions can define and rewrite themselves picture for example:</li>
+                <img src="images/ex8.png" alt="code example" />
+                <li>Note - If any properties have previously been set on the function, these will be lost when the function redefines itself.</li>
+                <li>Recursive function - invokes itself until a condition is met </li>
+                <li>Events can be a click and a keypress but they can also be when a file is done downloading</li>
+                <li>Remember, though, that JavaScript is still single-threaded, so only one task can happen at once. If an event only takes a small 
+                    amount of time to happen, it will still have to wait until other parts of the program have executed before the callback is invoked.</li>
+                <li>Promises can be used instead of callbacks to help try and avoid 'spaghetti code' </li>
+                <li>High-order function - is a function that returns another function</li>
+                <li>Closure - is a reference to a variable that was created inside the scope of another function but is then kept alive and used in another part of the program.</li>
+                <li>Functional programming - breaking down processes into steps as a series of functions</li>
+                <li>Pure functions are functions that don't rely on the state of the code they are called from, have no side-effects, and always give the 
+                    same result when given the same arguments (referential transparency).</li>
+                <li>Currying or partial application is the process of applying one argument at a time to a function. A new function is returned until all the arguments have been used.</li>
+            <hr>
+                <h2>Getting Started with JSON Web Tokens</h2>
+                <li>JSON Web Token (JWT) - open standard that defined a compact and self-contained way for securely transmitting info between parties as a JSON object.</li>
+                <li>Compact - can be sent through URL, POST param or in an HTTP header and is fast.</li>
+                <li>Self-contained - contains all the required info about the user to avoid querying database more than once</li>
+                <li>JWTs are a good way to securely transmit info between parties because you can be sure that the user is who they say they are.</li>
+                <li>JWTs consist of 3 parts: Header, Payload and Signature</li>
+                <img src="images/ex9.png" alt="code example" />
+                <img src="images/ex10.png" alt="code example" />
+                <img src="images/ex11.png" alt="code example" />
+                <li>DO NOT STORE SENSITIVE DATA IN BROWSER STORAGE DUE TO LACK OF SECURITY</li>
+                <img src="images/ex12.png" alt="code example" />
+                <li>Why use JWTs</li>
+                <li>smaller in size</li>
+                <li>easy client-side processing on multiple platforms especially mobile</li>
+                <h2>Develop, Debug, Learn?</h2>
+                <li>Nowadays we say we are developers, and we develop things, but what we mostly do is depend on other things.</li>
+                <li>Focus on end users - our job is to build things to allow people to use things</li>
+                <li>We hope that the things we use have it built in already. This creates missed opportunities.</li>
+                <li>Explains an example of downloading a 150mb file of code just to fix a single typo. This turns people away.</li>
+                <li>'Full StackOverflow developers'</li>
+                <li>Mentally exhausting switching between browsers, editors, blogs, command lines and repeat. </li>
+                <li>YOU CAN'T KNOW EVERYTHING</li>
+                <li>Pay attention to the red underline within vscode. It can help you learn while you develop.</li>
+                <li>Automation is happening everywhere. Now is a good time for people to become a developer and we can use an open source environment.</li>
+            </ul>
+          </div>
+          <input type="checkbox" id="question5">
+          <label for="question5">Week 5</label> 
+          <div class="content">
+            <ul>
+                <h2>JavaScript: Novice to Ninja</h2>
+                <li>data - way of embedding data in a webpage using custom attributes ignored by browser</li>
+                <li>^ contains only lowercase letters, numbers, hyphens, dots, colons or underscores.</li>
+                <img src="images/ex13.png" alt="code example" />
+                <li>localStorage - stores data</li>
+                <li>sessionStorage - stores data for just that session</li>
+                <li>EX: localStorage.setItem('name', 'James Thomas');</li>
+                <li>localStorage.getItem('name'); > James Thomas</li>
+                <li>To remove from localStorage use removeItem('') or delete localStorage.{insertNameHere};</li>
+                <li>Use localStorage.clear(); to wipe the localStorage</li>
+                <li>navigator.geolocation.getCurrentPosition(youAreHere); - gets current location</li>
+                <li>position has other properties such as: </li>
+                <li>speed - returns ground speed of device</li>
+                <li>altitude - estimated altitude in meters</li>
+                <li>heading - direction the device is going</li>
+                <li>timestamp - time the info was recorded</li>
+                <li>accuracy - gives a more precise location or altitude</li>
+                <li>geolocation watchPosition - calls a callback function every time the position of the device is updated</li>
+                <li>geolocation clearWatch - stop the callback function</li>
+                <li>Worker() - performs computationally intensive tasks in the background to help avoid website becoming unresponsive.</li>
+                <li>audio/video - embed audio tracks and video clips in a web page.</li>
+                <li>canvas - allows graphics to be drawn on webpage in real time with JS; rectangular element.</li>
+                <img src="images/ex14.png" alt="code example" />
+                <li>canvas is supported in: Chrome, FireFox, Opera, Safari, iOS, IE, Android</li>
+                <li>getContext - obtains drawings and passes it to a string</li>
+                <img src="images/ex15.png" alt="code example" />
+                <li>strokeStyle - context.strokeStyle = 'red';</li>
+                <li>fillStyle - context.fillStyle = 'blue';</li>
+                <li>sets colors to look like this:</li>
+                <img src="images/ex16.png" alt="code example" />
+                <li>can use CanvasGradient to get the same result with a gradient. EX:</li>
+                <img src="images/ex17.png" alt="code example" />
+                <li>The signature for the arc method is: arc(x, y, radius, startAngle, endAngle, anticlockwise).</li>
+                <li>Canvas Circle - context.arc(100,100,50,0, Math.PI*2, true);</li>
+                <li>SVG Circle - <circle cx="50" cy="50" r="25" fill="red"/></li>
+                <li>SVG Rectangle - <rect x="10" y="10" width="100" height="100"  fill="blue" stroke="red" stroke-width="3"  /></li>
+                <li>This creates a rectangle that's filled blue with a red outline</li>
+            <hr>
+            <img src="images/ex18.png" alt="code example" />
+            <img src="images/ex19.png" alt="code example" />
+            </ul>
+          </div>
+        </div>
+    
+</body>
+</html>
